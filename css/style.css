@@ -1,0 +1,301 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+.wrap{
+    width: 1000px;
+    font-family: "蘋方";
+    margin: 0 auto;
+}
+
+.top_bar{
+    background: rgb(228, 228, 228);
+}
+.top_bar ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+.top_bar li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;  
+}
+.top_bar img{
+    align-items: center;
+}
+.top_bar li a{   
+    text-decoration: none;
+    display: block;
+}
+.facebook{
+    border-right: 1px solid rgb(109, 109, 109);
+    color: rgb(20, 41, 131);
+}
+.facebook a{
+    color: rgb(20, 41, 131);
+}
+.twitter a{
+    color: rgb(49, 175, 224);
+}
+
+/*top_bar結束*/
+
+.header h1{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+    width: 224px;
+    height: 50px;
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    float: left;
+}
+.header ul{
+    float: right;
+    display: flex;
+    margin-top: 20px;
+
+}
+.header li{
+    margin-right: 20px;
+    
+}
+.header a{
+    text-decoration: none;
+    color: rgb(32, 199, 163);
+    padding-bottom: 9px;
+}
+.header a:hover{
+    border-bottom: 3px solid rgb(32, 199, 163);
+}
+.clearfix{
+    clear: both;
+}
+
+/*header結束*/
+
+.banner{
+    position: relative;
+}
+.banner p{
+    position: absolute;
+    top: 40%;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    line-height: 40px;
+    margin-left: 20px;
+    z-index: 2;
+}
+.banner_text_bg{
+    position: absolute;
+    top: 30%;
+    width: 1000px;
+    height: 150px;
+    background: #000;
+    opacity: 30%;
+    z-index: 1;
+}
+
+/*banner結束*/
+
+.content{
+    
+}
+.course{
+    display: flex;
+    justify-content: space-around;
+    line-height: 30px;
+    position: relative;
+}
+.course_html, .course_rwd, .course_jquery{
+    width: 300px;
+    font-size: 14px;
+    border-radius: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 2px 2px 10px rgb(180, 180, 180);
+}
+.course h2{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.course img{
+    padding-bottom: 20px;
+    padding-left: 20px; 
+}
+.course .course_html img{
+    padding-left: 60px;
+}
+.course .course_rwd img{
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.course .course_jquery img{
+    padding-left: 70px;
+    padding-top: 20px;
+}
+.course_jquery ul{
+    display: block;
+}
+.course_jquery li{
+    list-style-type: disc;
+}
+
+/*course結束*/
+
+.compare{   
+    margin-bottom: 40px;
+}
+.compare_table{
+    margin: 0 auto;
+}
+.compare h2{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.compare_table th, .compare_table td{
+    border-bottom: 1px solid rgb(161, 161, 161);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+    padding-left: 10px;
+}
+.compare_table th{
+    border-top: 1px solid rgb(161, 161, 161);
+    background: rgb(219, 219, 219);
+    text-align: left;
+    font-weight: 450;
+}
+.compare span{
+    color: rgb(32, 199, 163);
+}
+
+/*compare結束*/
+
+.leave_info{
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, rgb(1, 90, 72) 0%, rgb(13, 133, 107) 100%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.leave_info h2{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    font-weight: border;
+}
+.leave_info form{   
+    display: flex;
+}
+input[type="text"]{
+    display: block;
+    width: 460px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    margin-top: 7px;
+}
+.message{
+    margin-right: 30px;
+}
+label{
+    color: white;
+}
+.btn{
+    float: right;
+    width: 70px;
+    height: 30px;
+    color: white;
+    background: rgb(32, 199, 163);
+    border: none;
+    border-radius: 5px;
+    margin-top: 12px;
+}
+
+/*leaveinfo結束*/
+
+.footer ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer li{
+    padding: 10px 5px 10px 5px;
+    
+}
+.footer p{
+    line-height: 15px;
+    color: black;
+    
+}
+.footer span{
+    text-decoration: none;
+    color: rgb(224, 62, 111);
+}
