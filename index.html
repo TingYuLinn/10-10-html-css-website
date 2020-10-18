@@ -55,29 +55,29 @@
     </div>
 
     <div class="content"> 
-      <div class="course"> 
-        <div class="course_html">
+      <ul class="course"> 
+        <li class="course_html">
           <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png">
           <h2>Html 5 基礎課程</h2>
           <p>主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是投過實際的範例，了解正確的網站開發流程，講師均具有業界開發經驗讓學員學習業界流的開發方法。</p>
-        </div>
-        <div class="course_rwd">
+        </li>
+        <li class="course_rwd">
           <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png">
           <h2>響應式網站設計</h2>
           <p>嚮應式網站設計（responsive web design），目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供響應式開發方法，讓學生了解行動版開發技巧。</p>
-        </div>
-        <div class="course_jquery">
+        </li>
+        <li class="course_jquery">
           <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png">
           <h2>jQuery實戰教學</h2>
           <p>本課程有以下特色</p>
-            <ul style="list-style-position:inside">
+            <ul>
               <li>了解變數的使用方法</li>
               <li>學習並操作DOM</li>
               <li>學習基本數學運算方法</li>
               <li>套件的操作及運用</li>
             </ul>          
-        </div>     
-      </div>
+          </li>     
+      </ul>
 
       <div class="compare">
         <h2>線上及實體課程差異</h2>
@@ -143,9 +143,9 @@
                 <label for="name">姓名</label>
                 <input id="name" type="text" name="name" placeholder="六角講師">
                 <label for="phone">電話</label>
-                <input id="phone" type="text" name="phone" placeholder="0912345678">
+                <input id="phone" type="tel" name="phone" placeholder="0912345678">
                 <label for="email">信箱</label>
-                <input id="email" type="text" name="email" placeholder="hexschool@mail.com">
+                <input id="email" type="mail" name="email" placeholder="hexschool@mail.com">
                 <input class="btn" type="submit" value="送出">
               </div>
         </form>        
@@ -158,8 +158,11 @@
           <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png">          
         </li>
         <li>
-          <p>聯絡我們：<span>hexschool@mail.com</span></p>
-          <br><p>電話：<span>0999123456</span></p>
+          <ul class="contact">
+            <li>聯絡我們：<a href="#">hexschool@mail.com</a></li>
+            <li>電話：<a href="#">0999123456</a></li>
+          </ul>
+          
         </li>
       </ul>
     </div>
