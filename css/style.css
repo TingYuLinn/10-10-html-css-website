@@ -61,12 +61,10 @@ table {
 }
 
 .top_bar{
-    background: rgb(228, 228, 228);
-}
-.top_bar ul{
     display: flex;
     justify-content: flex-end;
     align-items: center; 
+    background: rgb(228, 228, 228);
 }
 .top_bar li{
     margin: 5px 0px;
@@ -130,7 +128,7 @@ table {
 .banner{
     position: relative;
 }
-.banner p{
+.banner h2{
     position: absolute;
     top: 40%;
     font-size: 30px;
